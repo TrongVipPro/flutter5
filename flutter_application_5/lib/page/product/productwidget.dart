@@ -3,8 +3,7 @@ import 'package:flutter_application_5/data/model/categorymodel.dart';
 import 'package:flutter_application_5/data/model/productmodel.dart';
 import '../../data/provider/productprovider.dart';
 import 'productbody.dart';
-import '../../conf/const.dart';
-
+import 'package:flutter_application_5/conf/const.dart';
 class ProductWidget extends StatefulWidget {
   final Category objCat;
   const ProductWidget({Key? key, required this.objCat}) :super(key: key);

@@ -16,11 +16,16 @@ class _AccountWidgetState extends State<AccountWidget> {
     SharedPreferences pref = await SharedPreferences.getInstance();
     String strUser = pref.getString('user')!;
 
-    if(strUser == null) {
-      objUser = User(fullname: "No data");
-    } else {
-      objUser = User.fromJson(jsonDecode(strUser));
-    }
+    // if(strUser == null) {
+    //   objUser = User(fullname: "No data");
+    // } else {
+    //   objUser = User.fromJson(jsonDecode(strUser));
+    // }
+
+      // objUser = strUser == null ? User(fullname: "No data") : User.fromJson(jsonDecode(strUser));
+
+   objUser = User.fromJson(jsonDecode(strUser ?? "{}"));
+
     setState(() {});
   }
 
