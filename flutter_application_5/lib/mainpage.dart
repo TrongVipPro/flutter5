@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'page/homewidget.dart';
+// import 'page/homewidget.dart';
 import 'page/category/categorywidget.dart';
 import 'page/register/registerwidget.dart';
 import 'page/account/accountwidget.dart';
@@ -16,10 +16,10 @@ class _MainpageState extends State<Mainpage> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static const List<Widget> _widgetOptions = <Widget>[
-    homewidget(),
+    // homewidget(),
     CategoryWidget(),
-    registerwidget(),
-    Accountwidget()
+    RegisterWidget(),
+    AccountWidget()
   ];
 
   void _onItemTapped(int index) {
@@ -58,6 +58,7 @@ class _MainpageState extends State<Mainpage> {
             label: 'Info',
           ),
         ],
+        selectedLabelStyle: optionStyle,
         currentIndex: _selectedIndex,
         selectedItemColor: const Color.fromARGB(255, 11, 7, 233),
         onTap: _onItemTapped,

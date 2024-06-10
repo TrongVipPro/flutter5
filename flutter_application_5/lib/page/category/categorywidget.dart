@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/foundation.dart' as foundation;
 import 'package:flutter/material.dart';
 import '../../data/model/categorymodel.dart';
 import '../../data/provider/categoryprovider.dart';
@@ -13,7 +13,7 @@ class CategoryWidget extends StatefulWidget {
 
 }
 
-class _CategoryWidgetState extends State<Categorywidget> {
+class _CategoryWidgetState extends State<CategoryWidget> {
   List<Category> lstCate = [];
   Future<String> loadCateList() async {
     lstCate = await ReadData().loadData();
