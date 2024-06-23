@@ -24,7 +24,7 @@ class _AccountWidgetState extends State<AccountWidget> {
 
       // objUser = strUser == null ? User(fullname: "No data") : User.fromJson(jsonDecode(strUser));
 
-   objUser = User.fromJson(jsonDecode(strUser ?? "{}"));
+    objUser = User.fromJson(jsonDecode(strUser));
 
     setState(() {});
   }
